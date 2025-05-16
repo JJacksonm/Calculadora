@@ -24,6 +24,7 @@ function ligar(){
     if(botoes.disabled){
             const botoes = document.querySelectorAll("button");
             botoes.forEach(botao => botao.disabled = false);
+            on.disabled = false
     }else{
         const botoes = document.querySelectorAll("button");
         botoes.forEach(botao => botao.disabled = true);
