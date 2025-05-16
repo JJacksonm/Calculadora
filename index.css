@@ -195,8 +195,16 @@
     width: 35vw;
     justify-self: start;
     border-radius: 2vw;
-    margin-left: 15vw;
+    margin-left: 7vw;
     display: inline-flex;
+}
+#btn_on{
+    font-size: 3vw;
+    justify-self: start;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 2vw;
+    word-break: break-all;
 }
 #btn_0{
     font-size: 4vw;
@@ -216,6 +224,12 @@
       opacity: 1 !important;
       color: black !important;
       border-color: black;
+}
+button:disabled{
+      opacity: 1 !important;
+      color: black !important;
+      border-color: black;
+      background-color: #80808042;
 }
 #btn_i{
     font-size: 4vw;

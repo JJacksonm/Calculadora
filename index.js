@@ -1,16 +1,38 @@
+
     var tela = document.getElementById("tela");
     var soma = document.getElementById("btn_m");var sub = document.getElementById("btn_-");
     var multi = document.getElementById("btn_X");var div = document.getElementById("btn_div");
-    var porcent = document.getElementById("btn_porcent")
-    var limp = document.getElementById("btn_limpar")
-    var apag1 = document.getElementById("btn_apagar") 
-    var vir = document.getElementById("btn_v")
+    var porcent = document.getElementById("btn_porcent");
+    var limp = document.getElementById("btn_limpar");
+    var apag1 = document.getElementById("btn_apagar");
+    var vir = document.getElementById("btn_v");
+    var on = document.getElementById("btn_on");
     sub.innerText = "-"
     soma.innerText = "+"
     porcent.innerText = "%"
     div.value = "÷"
     multi.value = "x"
     vir.innerText = "."
+
+  window.onload = function() {
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(botao => botao.disabled = true);
+    on.disabled = false
+  };
+
+function ligar(){
+    if(botoes.disabled){
+            const botoes = document.querySelectorAll("button");
+            botoes.forEach(botao => botao.disabled = false);
+            on.disabled = false
+    }else{
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(botao => botao.disabled = true);
+        tela.value = ""
+        on.disabled = false
+    }
+}
+
 function add(){
     tela.value += 0
 }

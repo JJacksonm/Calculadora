@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Calculadora</title>
 </head>
-<body>
+<body onload="ligado()">
     <div id="base">
         <div id="base_tela">
             <input type="text" id="tela" disabled>
@@ -35,6 +35,7 @@
             <button id="btn_m" onclick="add_soma()">+</button>
         </div>
         <div id="btns_5">
+            <button id="btn_on" onclick="ligar()">on/off</button>
             <button id="btn_0" onclick="add()">0</button>
             <button id="btn_v" onclick="add_vir()">.</button>
             <button id="btn_i" onclick="res()">=</button>
